@@ -12,9 +12,9 @@ public class HeroSquadApplication {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 
-        Superman superman = context.getBean(Superman.class);
-        WonderWoman wonderWoman1 = context.getBean(WonderWoman.class);
-        TalkingCat talkingCat = context.getBean(TalkingCat.class);
+        Hero superman = context.getBean(Superman.class);
+        Hero wonderWoman1 = context.getBean(WonderWoman.class);
+        Hero talkingCat = context.getBean(TalkingCat.class);
 
         superman.action();
         wonderWoman1.action();
