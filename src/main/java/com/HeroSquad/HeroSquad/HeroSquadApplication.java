@@ -1,6 +1,5 @@
 package com.HeroSquad.HeroSquad;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -10,7 +9,7 @@ public class HeroSquadApplication {
 
     public static void main(String[] args) {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("heroes.xml");
 
         Hero superman = context.getBean(Superman.class);
         Hero wonderWoman1 = context.getBean(WonderWoman.class);
